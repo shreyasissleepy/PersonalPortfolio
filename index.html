@@ -4,107 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shreyas Naik</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
 </head>
 <body>
-
     <section id="Home">
-        <div class="nav">
-            <div class="logo" style="display: flex; gap: 5px;">
-                <h2 style="color: purple;"><</h2>
-                <h2>Shreyas</h2>
-                <h2 style="color: purple;">/></h2>
-            </div>
-            <div class="ref">
-                <button>Home</button>
-                <a href="mailto:shreyasnaik179@gmail.com"><button>Get in touch</button></a>
-            </div>
-        </div>
+        <nav>
+            <div class="logo"><h2>Shreyas Naik</h2></div>
 
-        <div class="main">
-            <img src="image(1).webp" alt="banner" class="banner">
-            <h1 class="main-text">Shreyas Naik</h1>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Menu Links -->
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Work1">Work</a></li>
+                <li><a href="#Home">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Shreyas Naik</h1>
+            <span>Student. Programmer. Web Developer.</span><br><br>
+            <a href="https://github.com/shreyasissleepy"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://instagram.com/printoutnahihai"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/shreyasnaiik"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </header>
+        <div class="scroll-indicator">
+            <span></span>
         </div>
     </section>
-    <section id="About">
-        <p class="intext" style="width: 900px;" data-aos="fade-right">Hey, I'm Shreyas Naik, a curious Computer enthusiast  based in Dombivali, India. I'm always striving to grow and learn something new to build better stuff for better results. I am learning in Python programming with a focus on logic,efficiency and performance. I describe myself as a passionate developer who loves coding, learning, growing.</p>
 
-        <div class="grid">
-            <div class="python" data-aos="zoom-in">
-                <img src="pythonlogo.png" alt="">
-                <h2>Python</h2>
-                <span>I use Python for general purpose programming mainly focusing on logic,efficiency and problem solving. Python is one of my specialities.</span>
-            </div>
-
-            <div class="c" data-aos="zoom-in">
-                <img src="cpplogo.webp" alt="">
-                <h2>C/C++</h2>
-                <span>I learnt C/C++ basics mainly for general purpose programming ,school work and to understand Object Oriented Programming and Data Structures and Algorithms</span>
-            </div>
-
-            <div class="typescript" data-aos="zoom-in">
-                <img src="tslogo.png" alt="">
-                <h2>Typescript</h2>
-                <span>Typescript helps me fix bugs when i am working on Node.js based frameworks and libraries like Reactjs. I usually prefer Typescript.</span>
-            </div>
-
-            <div class="html" data-aos="zoom-in">
-                <img src="htmllogo.png">
-                <h2>HTML</h2>
-                <span>I am familiar with HTML and basic structures and design of website,This website has been built only by the use of HTML,CSS and Javascript with more focus on other programming languages</span>
-            </div>
-
-            <div class="css" data-aos="zoom-in">
-                <img src="csslogo.png" alt="">
-                <h2>CSS</h2>
-                <span>I use CSS for effectively styling websites,i have extensively built interactive user interfaces for several of my projects which i made while learning web designing</span>
-            </div>
-
-            <div class="javascript" data-aos="zoom-in">
-                <img src="jslogo.png" alt="">
-                <h2>Javascript</h2>
-                <span>I use Javascript when i am coding in Node.js framework and static websites. I have made Discord bots and express.js servers using Javascript.</span>
-            </div>
-
-        </div>
-
-        <div class="card" data-aos="zoom-in">
-            <h3>Skills</h3><br>
-            <div class="skills">
-                <span>Software Development 💻</span>
-                <span>Web Development 🌐</span>
-                <span>Prompt Engineering 🤖</span>
-            </div><br>
-
-            <h3>Location</h3>
-            <div class="location">
-                <img src="country.png" style="height: 15px; width: auto;">
-                <span>Dombivali, India</span>
-            </div><br>
-
-            <h3>Email</h3>
-            <span>shreyasnaik179@gmail.com</span>
-            <br><br>
-            <h3>Education</h3>
-            <span>Omkar English Medium School,CBSE</span><br>
-            <br>
-            <center><a href="https://www.instagram.com/nextpaglu/"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://github.com/shreyasissleepy"><i class="fa-brands fa-square-github"></i></a></center>
-        </div>
-        
+    <section id="Work1">
+        <h1>NewsAPI</h1>
+        <img src="media/1.png" alt="" data-aos="fade-left" class="s1"><br><br>
+        <p data-aos="fade-right">NewsAPI is a Python package that allows you to easily fetch the latest news articles from popular sources like BBC, ABP News, and India Today. Whether you're building a news aggregator or just looking for easy access to headlines, NewsAPI provides a simple interface to gather data with minimal setup.</p>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://kit.fontawesome.com/6877292443.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <section id="Work1">
+        <h1>URL Shortener</h1>
+        <img src="media/2.png" alt="" data-aos="fade-left" class="s2"><br><br>
+        <p data-aos="fade-right">A lightweight URL shortener built with Python Flask APIs and SQLite DB. It generates compact links, stores original URLs in a simple database, and quickly redirects users. Ideal for small projects needing efficient link management with minimal setup.</p>
+    </section>
+
+    <section id="Work1">
+        <h1>Password Manager</h1>
+        <img src="media/3.png" alt="" data-aos="fade-left" class="s2"><br><br>
+        <p data-aos="fade-right">PasswordBin is a password manager built with React.js, Express.js, and MongoDB provides secure credential storage, encrypted data handling, and a smooth user interface. React manages the frontend, Express powers the backend API, and MongoDB stores passwords safely for reliable, efficient access.</p>
+    </section>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="https://kit.fontawesome.com/bef3a8d58d.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+        AOS.init();
     </script>
 </body>
 </html>
